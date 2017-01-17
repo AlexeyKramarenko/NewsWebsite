@@ -1,0 +1,51 @@
+﻿ 
+<div id="articlePage">
+    <div id="news" class="list-group">
+        Оберiть статтю:
+        <ol>
+            <li ng-repeat="link in vm.links"
+                id="articleLink_{{link.ID}}">
+
+                <a href="javascript:void(0)"
+                   ng-click='vm.getArticleById(link.ID)'
+                   class="list-group-item link">{{link.Title}}</a>
+
+                <a href="javascript:void(0)"
+                   ng-click='vm.deleteArticleById(link.ID,link.Title)'
+                   class="list-group-item link">Видалити</a>
+            </li>
+        </ol>
+    </div>
+    <form></form>
+    <form id="articleForm">
+        <table id="article">
+            <tr>
+                <td>Назва статтi:</td>
+                <td>
+                    <input type="text"
+                           id="articleTitle"
+                           ng-disabled="vm.inputFieldDisabled"
+                           ng-model="vm.article.Title" />
+                </td>
+            </tr>
+            <tr>
+                <td>Змiст:</td>
+                <td>
+                    <textarea id="articleContent"
+                              ng-disabled="vm.inputFieldDisabled"
+                              ng-model="vm.article.TextContent"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button"
+                            ng-click="vm.updateArticle(vm.article)">
+                        Зберегти статтю
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

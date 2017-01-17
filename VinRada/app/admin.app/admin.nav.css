@@ -1,0 +1,17 @@
+﻿.links{
+    width:600px;
+    margin: 0 auto 30px auto;
+    background-color:aliceblue;
+    padding:10px;
+    border:1px solid black;
+}
+ 
+.links a:active { 
+    background-color: yellow;
+    color:red;
+}
+
+.links a:hover { 
+    background-color: #ff6a00;
+    color:#ffd800;
+}

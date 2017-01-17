@@ -1,0 +1,25 @@
+﻿<div> 
+    <form></form>
+    <form name="newsForm" id="newsForm">
+        <table>
+            <tr>
+                <td><b>Назва:</b></td>
+                <td>
+                    <input type="text" ng-model="vm.newsObj.Title"  required />
+                </td>
+            </tr>
+            <tr >
+                <td><b>Текст:</b></td>
+                <td>
+                    <textarea ng-model="vm.newsObj.Content" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" ng-click="vm.create(vm.newsObj, newsForm)"  >Зберегти</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

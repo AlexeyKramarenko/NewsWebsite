@@ -1,0 +1,19 @@
+﻿table {
+       background-color:aliceblue;
+     border: 1px solid;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    padding:5px;
+}
+td:first-child {
+    width: 100px;
+    vertical-align: top;
+}
+
+input[type=text], textarea {
+    margin: 3px 10px 3px 0px;
+    width: 520px;
+}

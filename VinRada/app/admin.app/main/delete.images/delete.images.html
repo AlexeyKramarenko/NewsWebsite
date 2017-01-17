@@ -1,0 +1,12 @@
+﻿
+
+<div id="imageLinks">
+    <ul>
+        <li ng-repeat="image in vm.images">
+            <br />
+            <img src="{{image.url}}" width="100" />
+            <input type="checkbox" ng-model="image.checked" />
+        </li>
+    </ul>
+    <button type="button" ng-click="vm.deleteImages()">Видалити відмічені зображення</button>
+</div>

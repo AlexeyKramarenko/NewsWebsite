@@ -1,0 +1,38 @@
+﻿
+
+<div>
+    <table>
+        <tr>
+            <td><b>Зображення:</b></td>
+            <td>
+
+                <!--  empty form to enable nesting forms in .aspx <form>(id='form1' runat='server')-->
+                <form></form>
+                <form id="fileUploadForm" name="fileUploadForm" method="post" enctype="multipart/form-data">
+                    <span id="inputPlaceholder">
+                        <input type="file" name="file" id="file" accept="image/*" />
+                    </span>
+                    <input type="button" 
+                           ng-click="vm.uploadImage()" 
+                           value="Завантажити зображення" />
+                </form>
+
+                <ul>
+                    <li ng-repeat="url in vm.imageUrls">
+                        <img ng-src="{{url}}" width="100" />
+                        <br />
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" 
+                       id="btnSave" 
+                       value="Зберегти усi зображення" 
+                       ng-click="vm.saveImages(vm.imageUrls)" />
+            </td>
+        </tr>
+    </table>
+</div>

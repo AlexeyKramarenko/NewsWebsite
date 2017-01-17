@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VinRada", "VinRada\VinRada.csproj", "{FFD88591-53D0-4FC6-B8E2-2749E3AA2276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{2FFC435E-16A5-405D-849F-69D4D119C94B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{6D018D5A-9DAF-4812-B885-735F8A441D0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD88591-53D0-4FC6-B8E2-2749E3AA2276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD88591-53D0-4FC6-B8E2-2749E3AA2276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD88591-53D0-4FC6-B8E2-2749E3AA2276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD88591-53D0-4FC6-B8E2-2749E3AA2276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFC435E-16A5-405D-849F-69D4D119C94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFC435E-16A5-405D-849F-69D4D119C94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFC435E-16A5-405D-849F-69D4D119C94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFC435E-16A5-405D-849F-69D4D119C94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D018D5A-9DAF-4812-B885-735F8A441D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D018D5A-9DAF-4812-B885-735F8A441D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D018D5A-9DAF-4812-B885-735F8A441D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D018D5A-9DAF-4812-B885-735F8A441D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

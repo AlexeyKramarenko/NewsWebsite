@@ -1,0 +1,19 @@
+﻿
+ 
+<div id="galleries">
+
+    Катeгорiя:
+    <select ng-options="x for x in vm.categories" ng-model="vm.selectedCategory" ng-change="vm.gelLinksByCategory(vm.selectedCategory)"></select>
+    
+    <span style="margin:15px 0 5px 20px">Список галерей:</span>
+    <div id="galleryList" class="list-group" style="overflow:scroll">
+        <ul>
+            <li ng-repeat="link in vm.links|orderBy:Category" id="galleryLink_{{link.ID}}">
+                <span>{{ link.Title }}</span>
+                <a href="javascript:void(0)" ng-click='vm.deleteGalleryById(link.ID, link.Title)' class="list-group-item link">Видалити</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>

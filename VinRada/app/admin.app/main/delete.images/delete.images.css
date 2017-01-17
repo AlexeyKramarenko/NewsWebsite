@@ -1,0 +1,12 @@
+﻿  
+#imageLinks ul {
+    width: 400px;
+    margin: 0 auto 0 auto;
+    list-style: none;
+}
+
+#imageLinks button {
+    width: 220px;
+    margin: 20px auto 0 auto;
+    display: block;
+}

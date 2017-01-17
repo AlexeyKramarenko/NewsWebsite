@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="VinRada.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Content/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="Scripts/dist/jquery.rondell.css" type="text/css" media="all" title="Screen"/>
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" name="webForm" runat="server">
+        <div id="header">           
+            <div>
+                <br />
+                <span>Вінницька районна рада жінок </span>
+                <div style="margin-left: 600px; margin-top:15px;">
+
+                    <asp:DropDownList ID="ddlLanguages" ClientIDMode="Static" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlLanguages_SelectedIndexChanged" Width="100px" meta:resourcekey="ddlLanguagesResource1">
+                        <asp:ListItem Value="first">--Мова--</asp:ListItem>
+                        <asp:ListItem Value="uk-UA" meta:resourcekey="ListItemResource1">Українська</asp:ListItem>
+                        <asp:ListItem Value="ru-RU" meta:resourcekey="ListItemResource2">Русский</asp:ListItem>
+                        <asp:ListItem Value="en-US" meta:resourcekey="ListItemResource3">English</asp:ListItem>
+                    </asp:DropDownList>
+                    
+                    <asp:Image  ClientIDMode="Static"  Width="24px" ID="Image1"  runat="server" ImageUrl="~/images/flags/ukr.gif" /></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="../головна">
+                        <asp:Label ID="lblMain" runat="server" meta:resourceKey="lblMain" />
+
+                    </a>
+                </li>
+                <li>
+                    <a href="../новини">
+                        <asp:Label ID="lblNews" runat="server" meta:resourceKey="lblNews" />
+                    </a>
+                </li>
+                <li>
+                    <a href="../статтi/Дiяльнiсть">
+                        <asp:Label ID="lblActivities" runat="server" meta:resourceKey="lblActivities" />
+                    </a>
+                </li>
+                <li>
+                    <a href="../статтi/свята">
+                        <asp:Label ID="lblHolidays" runat="server" meta:resourceKey="lblHolidays" />
+                    </a>
+                </li>
+                <li>
+                    <a href="../контакти">
+                        <asp:Label ID="lblContacts" runat="server" meta:resourceKey="lblContacts" />
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </div>
+        <div id="body" style="background-color: white; margin-top: -13px; ">
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+
+
+        </div>
+        <div id="footer">
+            <p>
+                &copy 2016 Вінницька районна рада жінок України
+            </p>
+        </div>
+    </form>
+    
+     <script src="../Scripts/jquery-1.6.4.js"></script>
+     <script src="../Scripts/jquery-ui-1.8.js"></script>
+
+    <asp:ContentPlaceHolder ID="Script" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

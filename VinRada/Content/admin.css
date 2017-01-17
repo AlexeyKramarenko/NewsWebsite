@@ -1,0 +1,21 @@
+﻿#adminPages {
+    font-size: large;
+    font-weight: bold;
+    padding: 20px 0 20px 60px;
+    position: relative;
+    background-color: aqua;
+}
+
+#editedContent {
+    margin-top: 20px;
+}
+
+nav {
+    margin: 0 auto;
+    width: 600px;
+}
+
+#ng-content {
+    margin: 50px auto;
+    width: 800px;
+}

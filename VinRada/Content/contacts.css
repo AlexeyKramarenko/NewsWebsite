@@ -1,0 +1,15 @@
+﻿#map {
+    background-color: white;
+    font-family: Arial;
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 455px;
+    color: black;
+}
+
+#googleMap {
+    width: 450px;
+    height: 370px;
+    border-color: black;
+    border-width: 5px;
+}

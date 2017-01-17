@@ -1,0 +1,44 @@
+﻿
+#content {
+    position: relative;
+}
+
+#news {
+    width: 300px;
+    margin: 50px auto auto 50px;
+    border: 1px solid;
+    position: absolute;
+}
+
+#article {
+    width: 500px;
+    margin: 50px auto auto 370px;
+    padding: 20px;
+    border: 1px solid;
+    position: absolute;
+}
+
+#articleTitle {
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: large;
+}
+
+#articleDate {
+    word-wrap: break-word;
+}
+
+#articleContent {
+    padding-top:10px;
+    word-wrap: break-word;
+}
+
+.link {
+    display: block;
+    word-wrap: break-word;
+    padding: 5px 5px 5px 5px;
+}
+
+#pager {
+    text-align: center;
+}

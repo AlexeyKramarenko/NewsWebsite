@@ -1,0 +1,33 @@
+﻿<div> 
+    <form></form>
+    <form name="articleForm">
+        <table>
+            <tr>
+                <td><b>Розділ:</b></td>
+                <td>
+                    <span ng-bind="vm.article.SelectedCategory" />
+                </td>
+            </tr>
+            <tr>
+                <td><b>Назва статтi:</b></td>
+                <td>
+                    <input type="text" ng-model="vm.article.Title" required />
+                </td>
+            </tr>
+            <tr style="border: 1px solid">
+                <td><b>Текст:</b></td>
+                <td>
+                    <textarea ng-model="vm.article.TextContent" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" 
+                           ng-click="vm.createArticle(vm.article,articleForm)" 
+                           value="Зберегти" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

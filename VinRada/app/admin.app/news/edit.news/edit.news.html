@@ -1,0 +1,59 @@
+﻿
+ 
+<div id="news" class="list-group">
+    Оберiть статтю:
+    <ul>
+        <li ng-repeat="link in vm.LinksViewModel">
+
+            <a href="javascript:void(0)"
+               ng-click='vm.getNewsById(link.ID)'
+               class="list-group-item link">{{link.Title}}</a>
+
+            <a href="javascript:void(0)"
+               ng-click='vm.deleteNewsById(link.ID)'
+               class="list-group-item link">Видалити</a>
+        </li>
+    </ul>
+</div>
+
+<form></form>
+<form id="editNewsForm">
+    <table id="article">
+        <tr>
+            <td>Назва сттатi :</td>
+            <td>
+                <input type="hidden"
+                       ng-model="vm.NewsPageViewModel.NewsID" />
+                <input type="text"
+                       id="articleTitle"
+                       ng-model="vm.NewsPageViewModel.Title" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Дата створення :</td>
+            <td>
+                <span type="text"
+                      id="articleDate"
+                      ng-bind="vm.NewsPageViewModel.Date" />
+            </td>
+        </tr>
+
+        <tr>
+            <td style="vertical-align: text-top">Змiст :</td>
+            <td>
+                <textarea id="articleContent"
+                          ng-model="vm.NewsPageViewModel.Content"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="button"
+                       value="Зберегти"
+                       ng-click="vm.updateNews(vm.NewsPageViewModel)" />
+            </td>
+        </tr>
+    </table>
+</form>

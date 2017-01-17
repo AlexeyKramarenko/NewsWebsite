@@ -1,0 +1,66 @@
+﻿
+#articlePage{
+    position:relative;
+    margin-left:30px;
+}
+    
+#articleForm {
+    position: absolute;
+    left: 470px;
+    top: 0;
+    background-color: antiquewhite; 
+} 
+#news {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    width: 460px;
+}
+
+#articleTitle {
+    width:290px;
+}
+#articleContent{
+    width:290px;
+    height:200px;
+}
+#galleries{
+    background-color:aliceblue;
+    border:1px solid black;
+    padding:20px;
+     width:800px;
+    margin:0 auto 0 auto;
+}
+#gallery{
+    background-color:aliceblue; 
+}
+td{
+    padding:5px;
+}
+ 
+#article {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:aliceblue;
+    width:450px;
+}
+table {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:aliceblue;
+}
+td:first-child {
+    width: 100px;
+    vertical-align: top;
+}
+
+input[type=text], textarea { 
+    width: 520px;
+} 
+#galleryList {
+    width: 600px;
+    margin-top: 25px;
+    border: 1px solid;
+    padding:10px 0 0 10px;
+}

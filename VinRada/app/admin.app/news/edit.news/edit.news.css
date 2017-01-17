@@ -1,0 +1,78 @@
+﻿#content {
+    position: relative;
+}
+
+#news {
+    width: 300px;
+    height: 360px;
+    margin: 10px auto auto 50px;
+    border: 1px solid;
+    position: absolute;
+    overflow-y: scroll;
+    background-color: aliceblue;
+}
+
+#article {
+    margin: 10px auto auto 370px;
+    padding: 20px;
+    border: 1px solid;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+#articleTitle {
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: large;
+    width: 300px;
+}
+
+#articleDate {
+    word-wrap: break-word;
+}
+
+#articleContent {
+    word-wrap: break-word;
+    width: 300px;
+    height: 200px;
+    vertical-align: text-top;
+}
+
+.link {
+    display: block;
+    word-wrap: break-word;
+    padding: 5px 5px 5px 5px;
+}
+
+#pager {
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+}
+
+#newsForm {
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 50px auto;
+    width: 500px;
+}
+
+    #newsForm > table > tbody > tr > td > input, textarea {
+        width: 400px;
+    }
+
+    #newsForm > table > tbody > tr > td > textarea {
+        width: 400px;
+        height: 300px;
+    }
+
+    #newsForm > table > tbody > tr > td {
+        vertical-align: top;
+    }
+
+        #newsForm > table > tbody > tr > td > button {
+            width: 150px;
+            height: 30px;
+        }

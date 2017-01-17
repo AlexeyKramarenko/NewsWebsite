@@ -1,0 +1,9 @@
+﻿.title {
+    color: blue;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.textContent {
+    word-wrap: break-word;
+}

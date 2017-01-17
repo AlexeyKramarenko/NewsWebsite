@@ -1,0 +1,58 @@
+﻿<div>
+    <!--<link href="../Content/CreateImagesContent.css" rel="stylesheet" />-->
+    <!--  empty form to enable nesting forms in .aspx <form>(id='form1' runat='server')-->
+    <form></form>
+    <form name="galleryForm" id="galleryForm" method="post" enctype="multipart/form-data">
+        <table id="gallery">
+            <tr>
+                <td><b>Категорiя:</b></td>
+                <td>
+                    <select id="categories" 
+                            ng-options="x for x in vm.gallery.Categories" 
+                            ng-model="vm.gallery.SelectedCategory"></select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Назва статтi:</b></td>
+                <td>
+                    <input type="text" 
+                           ng-model="vm.gallery.Title" 
+                           required />
+                </td>
+            </tr>
+
+            <tr style="border: 1px solid">
+                <td><b>Зображення:</b></td>
+                <td>
+
+                    <span id="inputPlaceholder">
+                        <input type="file" id="file" accept="image/*" />
+                    </span>
+                    <input type="button" 
+                           ng-click="vm.uploadImage()" 
+                           value="Завантажити зображення" />
+
+                    <ul>
+                        <li ng-repeat="image in vm.gallery.ImagesContent">
+                            <input type="text" 
+                                   class="description" 
+                                   ng-model="image.Description" 
+                                   required />
+                            <br />
+                            <img src="{{image.ImageSource}}" width="100" />
+                            <br />
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" class="btn" value="Вiдмiнити" ng-click="vm.clearCreateGalleryForm()" /><br /><br />
+                    <input type="button" class="btn" id="btnSave" value="Зберегти галлерею" ng-click="vm.createGallery(vm.gallery, galleryForm)" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
